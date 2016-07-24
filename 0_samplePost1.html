@@ -5,13 +5,14 @@
 	<style>
 		body {
 			background: #ccc;
-			position:absolute;
+			position: absolute;
+			text-align: center;
 		}
 
 		div {
-			background: #f3f;
+			margin:5%;
 			height:800px;
-			margin-top:12%;
+			background:#f7a;
 		}
 		
 		img {
@@ -23,22 +24,41 @@
 			max-width:300px;
 		}
 
-		/* .block1 {
-			margin-left:23%;
+		.block1 {
+			display:inline-block;
+		}
+
+		.block1img {
+			float:left;
+		}
+
+		.block1txt {
+			width:300px;
+			background:#a0e;
+			float:left;
 		}
 
 		.block2 {
-			clear: both;
-			margin-left:9%;
-		} */
+			display:inline-block;
+		}
+
+		.block2txt {
+			width:300px;
+			background:#a0e;
+			float:left;
+		}
+
+		.block2img {
+			float:left;
+		}
 	</style>
 </head>
 
 <body>
 	<div class="block1" align="left">
-		<img src="images/06-27_planeOverGreen.jpg" alt="Airplane flying over trees" style="float:left">
+		<img id="block1img" src="images/06-27_planeOverGreen.jpg" alt="Airplane flying over trees">
 
-		<span style="float:left; margin-left:40px;">
+		<span id="block1txt">
 			<p>On my way home at the end of June. This past spring was the longest I'd been away from home and my family. I spent my time at Amherst post-semester working for a professor and learning what it means to live on my own. I really do enjoy cooking for myself. </p>
 
 			<p>On the plane ride back I was alternating between listening to music and reading  [italicized] Dawnland Voices: An Anthology of Indigenous Writing from New England edited by Siobhan Senier. I've only read the Mi'kmaq section and a few pages of the Maliseet portion but already I'm learning so much. @ everyone: read this book!! Especially if you've spent anytime at all in the northeast(ern United States). Worth it. </p>
@@ -46,10 +66,10 @@
 	</div>
 
 	<div class="block2" align="center">
-		<span style="float:left">
+		<span id="block2txt">
 			<p>My second full-day home I jumped in the water first thing in  the morning and it felt so good. After weeks of swimming in the strange, freshwater ponds that are so common in Western Mass., it was nice to feel salt on my skin again.</p>
 		</span>
 
-		<img src="images/06-29_palmTrees.jpg" alt="Palm trees swaying in the wind" style="float:left; margin-left:40px">
+		<img id="block2img" src="images/06-29_palmTrees.jpg" alt="Palm trees swaying in the wind" style="float:left; margin-left:40px">
 	</div>
 </body>
