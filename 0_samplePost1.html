@@ -8,6 +8,7 @@
 	/* Find way to vertically (or otherwise) align text */
 		body {
 			background: #ccc;
+			display:table;
 			position: absolute;
 			text-align: center;
 		}
@@ -27,7 +28,9 @@
 
 		.block1 {
 			position:relative;
-			display:inline-block;
+			/* display:inline-block; */
+			display:table-cell;
+			vertical-align: middle;
 		}
 
 		.block1img {
