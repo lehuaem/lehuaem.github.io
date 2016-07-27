@@ -8,7 +8,7 @@
 	/* Find way to vertically (or otherwise) align text */
 		body {
 			background: #ccc;
-			display:table;
+			display:table; 
 			position: absolute;
 			text-align: center;
 		}
@@ -23,32 +23,38 @@
 		/* p {
 			max-width:300px;
 		} */
+
 		.block1 {
 			position:relative;
-			display:inline-block;
-			/* display:table-row;
-			text-align: center; */
+			/* display:inline-block; */
+			display:table-cell;
+			text-align: center; 
 		}
+
 		.block1img {
 			margin:5px;
 			background:#b7a;
 			float:left;
 		}
+
 		.block1txt {
 			width:300px;
 			margin:5px;
 			background:#a0e;
 			text-align: left;
-			/* display:inline-block; */
+			display:inline-block;
 			float:left;
-			display:table-cell;
-			vertical-align: middle;
+			/* display:table-cell;
+			vertical-align: middle; */
 		}
+		
 		.block2 {
-			display:inline-block; 
+			/* display:inline-block; */
 			/* display:table-row;
 			text-align: center; */
+			display:table-cell;
 		}
+
 		.block2txt {
 			margin:5px;
 			width:300px;
@@ -57,6 +63,7 @@
 			float:left;
 			vertical-align: middle;
 		}
+		
 		.block2img {
 			margin:5px;
 			background:#b7a;
