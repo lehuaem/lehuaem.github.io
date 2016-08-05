@@ -4,49 +4,35 @@
 <head>
 	<link href="/normalize.css" rel="stylesheet">
 	<style>
-		.content {
-			top:0;
-			bottom:0;
-			margin-top:30px;
-			position:fixed;
-			width:99%;
-			overflow: scroll;
+		.post {
+			width:100%;
+			height:100%;
+			z-index: -1;
 		}
 
 		.nav {
-			top:-10;
-			width:99%;
-			z-index: 10;
+			position:absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin-top: -10px;
+			width:100%;
+			height:60px;
 		}
 
-		/* .nav {
-			position:relative;
-			z-index: 10;
-			background:#cca;
-			width:100%;
-			clear:both;
-		} */
-
-		object {
-			width:100%;
-			height:700px;
-			/* Make height responsive? */
+		body {
+			position:absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
 		}
 	</style>
 </head>
 
 <body>
-	<div class="content">
-		<!--Content Photo Gallery here? With links to posts-->
-		<article>
-			<!-- Find way to display most recent post-->
-			<object data="2016/july.html"></object>
-		</article>
-	</div>
+	<object class="post" data="2016/july.html"></object>
 
-	<div class="nav">
-		<article>
-			<object data="nav.html"></object>
-		</article>
-	</div>
+	<object class="nav" data="nav.html"></object>
 </body>

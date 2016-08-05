@@ -1,28 +1,22 @@
 <!DOCTYPE html>
-<!--Note: Still need to add in sizes for MOBILE-->
-<!--Make scrolling more easy (less weird than now)-->
+<!--Header nav bar-->
 <head>
 	<link href="/normalize.css" rel="stylesheet">
 	<style>
-		.nav {
+		body {
+			padding:10px;
 			background:#cca;
-			width:100%;
-			clear:both;
 		}
 
-		.nav_links {
-			width:200px;
-			text-align: left;
+		.links {
 			float:left;
 		}
 
-		.nav_social {
-			width:200px;
-			text-align: right;
+		.ig {
 			float:right;
 		}
 
-		.nav_title {
+		.title {
 			width:200px;
 			margin:0 auto;
 		}
@@ -30,17 +24,14 @@
 </head>
 
 <body>
-	<div class="nav">
-		<div class="nav_links">
-			<a href="http://lehuaem.github.io/">Home</a>
-			&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-			<a href="Add link!">July</a>
-		</div>
-		<div class="nav_social">
-			<a href="http://instagram.com/lehuaem">IG</a>
-		</div>
-		<div class="nav_title">
-			<p>Adventure Repository</p>
-		</div>
+	<div class="links">
+		<!--Use list?-->
+		<a href="http://lehuaem.github.io/">Home</a>
+		&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+		<a href="Add link!">July</a>
 	</div>
+
+	<a class="ig" href="http://instagram.com/lehuaem">IG</a>
+
+	<p class="title">Adventure Repository</p>
 </body>
