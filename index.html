@@ -8,32 +8,25 @@
 			top:0;
 			bottom:0;
 			margin-top:30px;
-			z-index: 1;
 			position:fixed;
 			width:99%;
 			overflow: scroll;
 		}
+
 		.nav {
+			top:-10;
+			width:99%;
+			z-index: 10;
+		}
+
+		/* .nav {
 			position:relative;
 			z-index: 10;
 			background:#cca;
 			width:100%;
 			clear:both;
-		}
-		.nav_links {
-			width:200px;
-			text-align: left;
-			float:left;
-		}
-		.nav_social {
-			width:200px;
-			text-align: right;
-			float:right;
-		}
-		.nav_title {
-			width:200px;
-			margin:0 auto;
-		}
+		} */
+
 		object {
 			width:100%;
 			height:700px;
@@ -47,21 +40,13 @@
 		<!--Content Photo Gallery here? With links to posts-->
 		<article>
 			<!-- Find way to display most recent post-->
-			<object data="/2016/july.html"></object>
+			<object data="2016/july.html"></object>
 		</article>
 	</div>
 
 	<div class="nav">
-		<div class="nav_links">
-			<a href="http://lehuaem.github.io/">Home</a>
-			&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-			<a href="Add link!">July</a>
-		</div>
-		<div class="nav_social">
-			<a href="http://instagram.com/lehuaem">IG</a>
-		</div>
-		<div class="nav_title">
-			<p>Adventure Repository</p>
-		</div>
+		<article>
+			<object data="nav.html"></object>
+		</article>
 	</div>
 </body>
