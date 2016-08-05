@@ -4,39 +4,60 @@
 	<link href="/normalize.css" rel="stylesheet">
 	<style>
 		body {
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+
+		.nav {
+			position:fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin-top: -10px;
+			width:100%;
+			height:60px;
+		}
+
+		article {
+			width:100%;
+			height:100%;
+			text-align: center;
 			display:table;
 			border-spacing: 20px; /* adjust cell spacing here */
-			position:relative;
-			text-align: center;
-			margin:0 auto;
 		}
+
 		div {
 			display:table-row;
 			background:#cce;
 		}
+		
 		p {
 			display:inline-block;
 			vertical-align: middle;
 			text-align: left;
-			width:200px;
+			max-width:200px;
 			background:#cc1;
 		}
+		
 		img {
 			display:inline-block;
 			vertical-align: middle;
 			max-height: 600px;
 			background:#cc2;
 		}
+		
 		.title {
 			font-size:50px;
 			text-align: center;
 		}
-		.subtitle {
-			background:#cc5;
-		}
+
 		.byline {
-			float:left;
+			text-align: center;
 		}
+		
 		.date {
 			float:right;
 		}
@@ -44,18 +65,24 @@
 </head>
 
 <body>
+	<object class="nav" data="../nav.html"></object>
+
+	<article>
+
 	<div class="startImg">
 		<img src="july_images/00_Bethells.jpg" alt="IMG: 00_Bethells.jpg file upload">
 	</div>
 
 	<div class="title">
-		<p>July 2016</p>
+		<p class="title">July 2016</p>
 	</div>
 
 	<div class="subtitle">
-		<span class="byline">words and images by Lehua unless otherwise noted</span>
+		<span class="byline">L Matsumoto&nbsp;&nbsp;&nbsp;&#9900&nbsp;&nbsp;&nbsp;01 Aug 2016</span>
 
-		<span class="date">01 Aug 2016</span>
+		<!-- <span class="byline">words and images by Lehua unless otherwise noted</span>
+
+		<span class="date">01 Aug 2016</span>-->
 	</div>
 
 	<div>	
@@ -169,4 +196,5 @@
 	<div>
 		<p>An expression of thankfulness that there was food for another day.</p>
 	</div>
+</article>
 </body>
