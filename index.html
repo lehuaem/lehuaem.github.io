@@ -1,42 +1,20 @@
 <!DOCTYPE html>
-<!--Note: Still need to add in sizes for MOBILE-->
-<!--Make scrolling more easy (less weird than now)-->
+<!--Header nav bar-->
 <head>
 	<link href="/normalize.css" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Mada:300' rel='stylesheet' type='text/css'>
 	<style>
 		body {
-			position:absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			text-align: center;
 		}
-		
+
 		.nav {
-			position:relative;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			margin-top: -10px;
-			width:100%;
-			height:75px;
-		}
-		
-		/* .post {
-			width:100%;
-			height:100%;
-		} */
-		
-		div {
-			padding:50px;
-		}
-		
-		img {
-			padding:10px;
-			max-height:400px;
+			padding: 5px;
+			margin-top:15px;
+			background: #fff;
+			border-style: none none solid none;
+			border-width: 1px;
+			border-color: #8B0000;
+			text-align: center;
 		}
 		
 		a:link {
@@ -48,25 +26,55 @@
 			text-decoration: none;
 		}
 		
-		p {
-			display:block;
-			border-width:2px;
-			border-color:#20B2AA;
-			font-family:'Source Sans Pro', sans-serif;
+		.links {
+			width:25%;
+			display:inline-block;
+			text-align: left;
+			float:left;
+			font-family: 'Source Sans Pro', sans-serif;
+		}
+		
+		.ig {
+			width:25%;
+			display:inline-block;
+			text-align: right;
+			float:right;
+			font-family: 'Source Sans Pro', sans-serif;
+		}
+		
+		.title {
+			margin:auto;
+			margin-top: -7px;
+			width:50%;
+			text-align: center;
+			font-family: 'Mada', sans-serif;
+			font-size:35px;
+		}
+
+		.content {
+			position:relative;
+			top: 0;
+			bottom: 0;
+			padding:20px;
+			width:100%;
+			height:800px;
 		}
 	</style>
 </head>
 
 <body>
-	<object class="nav" data="nav.html"></object>
+	<div class="nav">
+		<div class="links">
+			&nbsp;&nbsp;&nbsp;
+			<a href="https://lehuaem.github.io/">Home</a>
+			&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+			<a href="https://lehuaem.github.io/2016/july.html">July</a>
+		</div>
 
-	<!--<object class="post" data="2016/july.html"></object>-->
+		<a class="ig" href="http://instagram.com/lehuaem">IG&nbsp;&nbsp;&nbsp;</a>
 
-	<div>
-		<a href="https://lehuaem.github.io/2016/july.html">
-			<img src="2016/july_images/00_Bethells.jpg" alt="Bethells">
-			
-			<p>July</p>
-		</a>
+		<a class="title" href="https://lehuaem.github.io/"><b>FUN STUFF</b></a>
 	</div>
+
+	<object class="content" data="preview.html"></object>
 </body>
